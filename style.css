@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+ --color-blue: #072B61;
+ --color-light-blue: #EFF1FA;
+ --color-gray: #CED4DA;
+}
+
+body{
+    background-color: var(--color-light-blue);
+    font-family: "Inter", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    display: flex;
+    gap: 2%;
+    padding: 20px;
+}
+.containerPrincipal{
+    width: 75%;
+}
+
+.principal__input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    height: 90vh;
+}
+input{
+    width: 80%;
+    height: 45vh;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    font-size: 2rem;
+    color: var(--color-blue);
+    text-align: start;
+}
+input::placeholder{
+    color: var(--color-blue);
+    text-align: center; 
+      top: 0;
+      left: -150px;
+      width: 100%; 
+}
+.button-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    gap: 10px;
+    height: 50px;
+}
+.btn-criptografar{
+    background-color: #072B61;
+    color: var(--color-light-blue);
+    width: 25%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-descriptografar{
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+    width: 25%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.containerSecundario{
+    background-color:  white;
+    box-shadow: 1px 2px 3px var(--color-gray);
+    width: 24%;
+    height: 87vh;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+
+}
+.containerSecundario img{
+    width: 70%;
+}
+.containerSecundarioComTexto{
+    background-color:white;
+    box-shadow: 1px 2px 3px var(--color-gray);
+    width: 24%;
+    height: 87vh;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+.text-area{
+    width: 100%;
+    height: 90%;
+    color: var(--color-blue);
+    font-size: 1.3rem;
+}
+.btn-copiar{
+    background-color: var(--color-light-blue);
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+    width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.hide{
+    display: none;
+}
+
+.display{
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .principal__input{
+        height: 400px;
+        gap: 20px;
+    }
+    input{
+        width: 500px;
+    }
+
+    input::placeholder{
+        position: absolute;
+        top: 0;
+        left: -130px;
+        width: 100%;
+    }
+    button{
+        min-width: 120px;
+    }
+    
+    .containerSecundario{
+        width: 500px;
+        height: 30%;
+    }
+    .containerSecundarioComTexto{
+        width: 500px;
+        min-height: 200px;
+        height: 30%;
+    }
+}

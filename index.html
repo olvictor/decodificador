@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="containerPrincipal">
+            <img src="./assets/logo.png" alt="logo-alura">
+
+            <div class="principal__input">
+                <input name="text" id="texto" cols="30" rows="10" placeholder="Digite seu texto"></input>
+                <div class="button-area">
+                    <button class="btn-criptografar" onclick="criptografarTexto()">Criptografar</button>
+                    <button class="btn-descriptografar" onclick="descriptografarTexto()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerSecundario" id="containerSecundario">
+            <img src="./assets/lupa.svg" alt="">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div class="containerSecundarioComTexto" id="containerSecundarioComTexto">
+                <div class="text-area" id="text-area">
+                    
+                </div>
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
